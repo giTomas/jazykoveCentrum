@@ -47,10 +47,13 @@
         margin: 2.5em 0      //temporary solution
         font-size: 2.25rem
     
-.logo,
-.flag
 
-    
+.language-center,
+.switch-language
+      .flex
+        justify-content: center
+        
+   
 .banner,
 .switch-language
     height: 3.125em
@@ -58,8 +61,32 @@
     @media (max-width: 400px)
         width: 100%
         
-//.language-center
-    //border-bottom: 2px solid #333
+.flag
+  background:
+    size: contain
+    position: 50%
+    repeat: no-repeat
+  position: relative
+  display: inline-block
+  width: 1.6em
+  height: 1.2em
+  margin: 0 0.5em
+  //width: 1.33333333em
+  ///line-height: 1em
+  transition: all 0.2s ease-in-out
+  &:hover
+    opacity: 0.5
+  
+.cz
+   background:
+    image: url('../svg/cz.svg')
+.ru
+   background:
+    image: url('../svg/ru.svg')
+.en
+   background:
+    image: url('../svg/gb.svg')
+    
        
 .banner
     padding: 0 0.5em
@@ -70,7 +97,6 @@
     .flex 
         align-items: center
   
-
 .description
     margin-left: 0.5em
     font-style: italic
@@ -123,40 +149,14 @@
     display: none
     position: absolute
     background-color: #333
-    //top: 100%
-    @media (max-width)
-        position: relative
+    //@media (max-width)
+        //position: relative
 
    
 .navigation li:hover
      ul  
         display: block
 
-.flag
-  background:
-    size: contain
-    position: 50%
-    repeat: no-repeat
-  position: relative
-  display: inline-block
-  width: 1.6em
-  height: 1.2em
-  margin: 0 0.5em
-  //width: 1.33333333em
-  ///line-height: 1em
-  transition: all 0.2s ease-in-out
-  &:hover
-    opacity: 0.5
-  
-.cz
-   background:
-    image: url('../svg/cz.svg')
-.ru
-   background:
-    image: url('../svg/ru.svg')
-.en
-   background:
-    image: url('../svg/gb.svg')
-    
+
 
 

@@ -112,6 +112,13 @@ a {
       margin: 2.5em 0;
       font-size: 2.25rem; } }
 
+.language-center .flex,
+.switch-language .flex {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .banner,
 .switch-language {
   height: 3.125em;
@@ -124,6 +131,29 @@ a {
     .banner,
     .switch-language {
       width: 100%; } }
+
+.flag {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.6em;
+  height: 1.2em;
+  margin: 0 0.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .flag:hover {
+    opacity: 0.5; }
+
+.cz {
+  background-image: url("../svg/cz.svg"); }
+
+.ru {
+  background-image: url("../svg/ru.svg"); }
+
+.en {
+  background-image: url("../svg/gb.svg"); }
 
 .banner {
   padding: 0 0.5em;
@@ -182,32 +212,6 @@ a {
   display: none;
   position: absolute;
   background-color: #333; }
-  @media (max-width) {
-    .navigation ul {
-      position: relative; } }
 
 .navigation li:hover ul {
   display: block; }
-
-.flag {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  display: inline-block;
-  width: 1.6em;
-  height: 1.2em;
-  margin: 0 0.5em;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-  .flag:hover {
-    opacity: 0.5; }
-
-.cz {
-  background-image: url("../svg/cz.svg"); }
-
-.ru {
-  background-image: url("../svg/ru.svg"); }
-
-.en {
-  background-image: url("../svg/gb.svg"); }
