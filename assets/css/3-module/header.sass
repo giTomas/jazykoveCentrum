@@ -133,4 +133,30 @@
         display: block
 
 .flag
-    color: white
+  background:
+    size: contain
+    position: 50%
+    repeat: no-repeat
+  position: relative
+  display: inline-block
+  width: 1.6em
+  height: 1.2em
+  margin: 0 0.5em
+  //width: 1.33333333em
+  ///line-height: 1em
+  transition: all 0.2s ease-in-out
+  &:hover
+    opacity: 0.5
+  
+.cz
+   background:
+    image: url('../svg/cz.svg')
+.ru
+   background:
+    image: url('../svg/ru.svg')
+.en
+   background:
+    image: url('../svg/gb.svg')
+    
+.selected
+   border: 4px solid yellow
